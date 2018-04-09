@@ -1,0 +1,102 @@
+.App__Container {
+	display: flex;
+	width: 100%;
+	height: 780px;
+	justify-content: center;
+}
+
+.App__replayWinner {
+	position: absolute;
+	top: 200px;
+	left: 48%;
+}
+.App__replayButton {
+	position: absolute;
+	top: 558px;
+	left: 46.9%;
+	height: 30px;
+	width: 100px;
+}
+
+.App__Scoreboard {
+	border: 1px solid lightgrey;
+	padding: 2%;
+	height: 200px;
+	width: 100px;
+	position: absolute;
+	top: 260px;
+	left: 24%;
+}
+
+.App__Board {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-gap: 10px;
+	margin: auto;
+}
+
+.App__Square {
+	height: 100px;
+	width: 100px;
+	background-color: grey;
+}
+
+/* .App__Square--display {
+
+} */
+
+/*O Icon*/
+.displayO {
+	color: #000;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+.displayO:before {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	left: 10px;
+	border: 14px solid currentColor;
+	border-radius: 50%;
+}
+
+/* X Icon */
+
+.displayX {
+	color: #000;
+	position: absolute;
+	margin-top: 0;
+	margin-left: 0;
+	width: 100px;
+	height: 100px;
+}
+.displayX:before {
+	content: '';
+	position: absolute;
+	top: 42px;
+	left: 6px;
+	width: 90px;
+	height: 14px;
+	background-color: currentColor;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.displayX:after {
+	content: '';
+	position: absolute;
+	top: 42px;
+	left: 6px;
+	width: 90px;
+	height: 14px;
+	background-color: currentColor;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.displayNone {
+	height: 100px;
+	width: 100px;
+}
